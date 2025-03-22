@@ -1,7 +1,7 @@
 import { Agentica } from "@agentica/core";
-import typia from "typia";
 import dotenv from "dotenv";
 import { OpenAI } from "openai";
+import typia from "typia";
 
 import { NotionService } from "@wrtnlabs/connector-notion";
 
@@ -20,7 +20,9 @@ export const agent = new Agentica({
       name: "Notion Connector",
       protocol: "class",
       application: typia.llm.application<NotionService, "chatgpt">(),
-      execute: new NotionService(),
+      execute: new NotionService({
+        secret: process.env.NOTION_SECRET_KEY!,
+      }),
     },
   ],
 });
