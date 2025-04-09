@@ -21,7 +21,7 @@ export const agent = new Agentica({
       protocol: "class",
       application: typia.llm.application<NotionService, "chatgpt">(),
       execute: new NotionService({
-        secret: process.env.NOTION_SECRET_KEY!,
+        notionApiKey: process.env.NOTION_SECRET_KEY!,
       }),
     },
   ],
