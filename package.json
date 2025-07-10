@@ -18,6 +18,6 @@
     "@wrtnlabs/connector-notion": "^0.1.506",
     "dotenv": "^16.4.7",
     "openai": "^5.8.3",
-    "typia": "^9.3.0"
+    "typia": "^9.5.0"
   }
 }
