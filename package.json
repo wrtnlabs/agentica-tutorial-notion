@@ -14,7 +14,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@agentica/core": "^0.34.1",
+    "@agentica/core": "^0.34.2",
     "@wrtnlabs/connector-notion": "^0.1.506",
     "dotenv": "^16.4.7",
     "openai": "^6.8.1",
